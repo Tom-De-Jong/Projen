@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contentHolder">
+
+        <div class="card">
+
+            <h1 class="heroHeader">Projen</h1>
+            <p class="heroParagraph">Your best friend when you have no idea what to create!</p>
+            <button class="button mt" onclick="startQuestions()">Start!</button>
+
+        </div>
+
+        <div class="questionCard" id="q1" style="display: none;">
+            <p class="heroParagraph">What programming languages do you currently know, and what languages do you want to
+                learn?</p>
+            <textarea type="text" class="input large mt"></textarea>
+            <button class="button mt" onclick="nextQuestion(this)">Continue</button>
+        </div>
+
+        <div class="questionCard" id="q2" style="display: none;">
+            <p class="heroParagraph">Do you have any goals that you would love to achieve?</p>
+            <textarea type="text" class="input large mt"></textarea>
+            <button class="button mt" onclick="nextQuestion(this)">Continue</button>
+        </div>
+
+        <div class="questionCard" id="q3" style="display: none;">
+            <p class="heroParagraph">How long do you want to work on this project?</p>
+            <textarea type="text" class="input large mt"></textarea>
+            <button class="button mt" onclick="nextQuestion(this)">Continue</button>
+        </div>
+
+        <div class="questionCard" id="q4" style="display: none;">
+            <p class="heroParagraph">How good are you at programming?</p>
+            <textarea type="text" class="input large mt"></textarea>
+            <button class="button mt" onclick="nextQuestion(this)">Continue</button>
+        </div>
+
+        <div class="questionCard" id="q5" style="display: none;">
+            <p class="heroParagraph">is there something in your life currently that annoys you or is extremely manual.
+                And if so what is it?</p>
+            <textarea type="text" class="input large mt"></textarea>
+            <button class="button mt" onclick="nextQuestion(this)">Continue</button>
+        </div>
+
+        <div class="questionCard" id="q6" style="display: none;">
+            <p class="heroParagraph">Do you have any output goal like a portfolio piece, learning something new or a
+                handy tool?</p>
+            <textarea type="text" class="input large mt"></textarea>
+            <button class="button mt" onclick="nextQuestion(this)">Continue</button>
+        </div>
+
+        <div class="questionCard" id="loading" style="display: none;">
+            <p class="heroParagraph">Generating project ideas...</p>
+
+        </div>
+
+    </div>
+
+    <div class="answerCard" style="display: none;">
+        <div class="center">
+
+        <p class="heroParagraph AIanswer">here answers</p>
+        <script src="main.js" defer></script>
+        </div>
+    </div>
+
+</body>
+
+</html>
